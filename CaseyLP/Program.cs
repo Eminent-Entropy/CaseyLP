@@ -5,7 +5,6 @@ using Discord;
 using Discord.WebSocket;
 using Discord.Commands;
 using Microsoft.Extensions.DependencyInjection;
-using System.IO;
 using System.Linq;
 
 public class Program
@@ -13,10 +12,6 @@ public class Program
     private CommandService commands;
     private DiscordSocketClient client;
     private IServiceProvider services;
-    string mainDir;
-    string roleFiles;
-    string userFiles;
-
     public Program()
     {
         mainDir = "C:/srab";
